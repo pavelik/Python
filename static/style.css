@@ -1,0 +1,47 @@
+body {
+    background-color: #333;
+    padding-top: 70px;
+}
+
+.navbar {
+    background-color: rgb(24, 29, 29) !important;
+}
+
+#messages {
+    padding-bottom: 250px;
+}
+
+.author {
+    color: #fff;
+}
+
+.alert-dark {
+    background-color: rgb(24, 29, 29);
+    color: aqua;
+    border: none;
+}
+
+#nickname:focus {
+    background-color: rgb(24, 29, 29);
+}
+
+#message:focus {
+    background-color: rgb(24, 29, 29);
+}
+
+.btn-primary-dark {
+    background-color: #3d3a92;
+    color: #fff;
+}
+
+.btn-primary-dark:hover {
+    transition: all ease-in-out 0.2s;
+    background-color: #4b5ba9;
+}
+
+.card {
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
