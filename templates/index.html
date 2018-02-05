@@ -1,0 +1,25 @@
+{% extends 'layout.html' %} {% block body %}
+<nav class="navbar fixed-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="#top">Flask Chat App</a>
+</nav>
+
+<div class="container">
+    <div id="messages" class="text-left ml-4">
+    </div>
+</div>
+<div class="card">
+    <div class="card-body">
+        <form action="/" method="POST">
+            <div class="col form-group">
+                <input id="nickname" type="text" name="nickname" placeholder="Your nickname" class="form-control alert-dark" required>
+            </div>
+            <div class="col mb-2">
+                <div class="form-group">
+                    <textarea id="message" name="message" class="form-control mb-2 alert-dark" placeholder="Enter your message here..." required></textarea>
+                </div>
+                <input type="submit" id="submitMessage" value="Send" class="btn btn-primary-dark btn-block btn-lg">
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
