@@ -5,6 +5,15 @@
 
 <div class="container">
     <div id="messages" class="text-left ml-4">
+        {% for message in messages %}
+        <label class="author">{{message.nickname}}</label>
+        <div class="alert alert-dark" role="alert">
+            {{message.body}}
+            <div class="text-muted text-right">
+                <small>{{message.created_at.strftime('%d.%m.%Y %H:%M:%S')}}</small>
+            </div>
+        </div>
+        {% endfor %}
     </div>
 </div>
 <div class="card">
