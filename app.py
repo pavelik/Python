@@ -21,8 +21,6 @@ def handleMessage(msg):
     message = Message(msg['nickname'], msg['message'], msg['date'])
     db.session.add(message)
     db.session.commit()
-    
+
     emit('response', msg)
 
-if __name__ == '__main__':
-    socketio.run(app)
